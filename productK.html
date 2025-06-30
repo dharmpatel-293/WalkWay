@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WalkWay – Product</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- Header Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light navbar-custom" id="mainNavbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/walkway-logo.png" alt="WalkWay Logo" class="walkway-logo" />
+     </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center"  >
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="Men.html">Men</a></li>
+          <li class="nav-item"><a class="nav-link" href="Women.html">Women</a></li>
+          <li class="nav-item"><a class="nav-link" href="Kids.html">Kids</a></li>
+          <li class="nav-item"><a class="nav-link" href="Sale.html">Sale</a></li>
+        </ul>
+      </div>
+      <form class="d-flex align-items-center">
+        <div class="position-relative me-2">
+           <input id="global-search"
+                  class="search-box"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search" />
+
+        <!-- Suggestions dropdown -->
+          <ul id="search-suggestions" class="list-group position-absolute w-100 d-none"></ul>
+        </div>
+        <a href="favourites.html" class="icon-btn">
+          <i class="bi bi-heart"></i>
+        </a>
+        <a href="bag.html" class="icon-btn">
+          <i class="bi bi-bag"></i>
+        </a>
+      </form>
+    </div>
+  </nav>
+
+<!-- Main Section -->
+<div class="container3 my-5">
+  <div class="row">
+    
+    <!-- Thumbnails -->
+    <div class="col-md-1 d-flex flex-column gap-2" id="thumbnail-list">
+      <!-- Thumbnails will be injected here -->
+    </div>
+
+    <!-- Main Image -->
+    <div class="col-md-6">
+      <img id="main-image" src="" class="img-fluid border rounded" alt="Main Shoe Image">
+    </div>
+
+    <!-- Product Details -->
+    <div class="col-md-5">
+      <h4 id="product-name">Product Name</h4>
+      <p class="text-muted">Kids's Shoes</p>
+      <h5 class="fw-bold" id="product-price">MRP: ₹0</h5>
+      <p class="text-secondary small">Inclusive of all taxes</p>
+
+      <h6 class="mt-4">Select Size</h6>
+      <div id="size-options" class="d-flex flex-wrap gap-2 mb-4">
+        <!-- Sizes will be injected here -->
+      </div>
+
+      <button id="add-to-bag" class="btn btn-dark w-100 mb-2">Add to Bag</button>
+
+      <button id="add-to-fav" class="btn btn-outline-dark w-100 mt-2">
+        <i class="bi bi-heart"></i> Favourite
+      </button>
+
+    </div>
+  </div>
+</div>
+
+<section class="shop-icons-section container mt-5">
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h2 class="section-title">You Might Also Like</h2>
+    <div class="scroll-buttons d-flex gap-2">
+      <button class="scroll-btn left" onclick="scrollLeft()">&#8249;</button>
+      <button class="scroll-btn right" onclick="scrollRight()">&#8250;</button>
+    </div>
+  </div>
+
+    <div id="icon-carousel" class="d-flex overflow-auto">
+    <div class="icon-card text-center flex-shrink-0">
+      <a href="product.html?id=Nike-Vomero-18" class="text-decoration-none text-dark">
+      <img src="images/slider/Vomero-18.png" alt="Vomero 18" class="img-fluid">
+      </a>
+    </div>
+    <div class="icon-card text-center flex-shrink-0">
+      <a href="product.html?id=Nike-V2K-Run" class="text-decoration-none text-dark">
+      <img src="images/slider/v2k.png" alt="V2K" class="img-fluid">
+      </a>  
+    </div>
+    <div class="icon-card text-center flex-shrink-0">
+      <a href="product.html?id=Nike-Pegasus-41-2" class="text-decoration-none text-dark">
+      <img src="images/slider/pegasus-41.png" alt="Pegasus 41" class="img-fluid">
+      </a>
+    </div>
+    <div class="icon-card text-center flex-shrink-0">
+      <a href="product.html?id=Nike-Zoom-Vomero-5" class="text-decoration-none text-dark">
+      <img src="images/slider/Vomero-5.png" alt="Vomero-5" class="img-fluid">
+      </a>
+    </div>
+    <div class="icon-card text-center flex-shrink-0">
+      <a href="product.html?id=Nike-Free-Metacon-6" class="text-decoration-none text-dark">
+      <img src="images/slider/Metcon.png" alt="Metcon" class="img-fluid">
+      </a>
+    </div>
+    <div class="icon-card text-center flex-shrink-0">
+      <img src="images/slider/Blazer.png" alt="Blazer" class="img-fluid">
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+
+<footer class="site-footer mt-5 pt-5 pb-4 text-white">
+  <div class="container">
+    <div class="row gy-4">
+
+      <!-- Column 1: About -->
+      <div class="col-md-3">
+        <h5 class="fw-bold mb-3">WalkWay</h5>
+        <p>Footwear That Fits Your Style</p>
+      </div>
+
+      <!-- Column 2: Help -->
+      <div class="col-md-3">
+        <h6 class="fw-semibold mb-3">Help</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="footer-link">Order Status</a></li>
+          <li><a href="#" class="footer-link">Shipping & Delivery</a></li>
+          <li><a href="#" class="footer-link">Returns</a></li>
+          <li><a href="#" class="footer-link">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Company -->
+      <div class="col-md-3">
+        <h6 class="fw-semibold mb-3">Company</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="footer-link">About WalkWay</a></li>
+          <li><a href="#" class="footer-link">Careers</a></li>
+          <li><a href="#" class="footer-link">Press</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Follow -->
+      <div class="col-md-3">
+        <h6 class="fw-semibold mb-3">Follow Us</h6>
+        <div class="d-flex gap-3">
+          <a href="#" class="footer-icon"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="footer-icon"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="footer-icon"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="footer-icon"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <hr class="border-light my-4" />
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center text-light">
+      <p class="mb-0">© 2025 WalkWay. All rights reserved.</p>
+      <div class="d-flex gap-3">
+        <a href="#" class="footer-link">Privacy Policy</a>
+        <a href="#" class="footer-link">Terms of Use</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Toast Container -->
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 9999">
+  <div id="bagToast" class="toast align-items-center text-bg-dark border-0" role="alert">
+    <div class="d-flex">
+      <div class="toast-body">
+        ✅ Added to Bag
+      </div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+    </div>
+  </div>
+</div>
+
+
+<!-- Bootstrap JS -->
+<script src="js/products-data.js"></script>
+<script src="js/product.js"></script>
+<script src="js/script.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

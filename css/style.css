@@ -1,0 +1,379 @@
+/* Navbar styling */
+.navbar-custom {
+  background-color: #fff;
+  padding: 0.75rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#mainNavbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+  opacity: 1;
+  visibility: visible;
+}
+#mainNavbar.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+/* Center nav links */
+.navbar-custom .nav-link {
+  color: #000;
+  font-weight: 500;
+  margin: 0 10px;
+  align-items: center;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #555;
+}
+
+/* Logo */
+.walkway-logo {
+  height: 70px;
+  width: 150px;
+  display:block ;
+  padding: 0;
+  margin-left: -20px;
+  margin-right: 30px;
+  margin-top: -20px;
+  margin-bottom: -13px;
+}
+
+.navbar-brand {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+/* Search bar styling */
+.search-box {
+  border: none;
+  border-radius: 20px;
+  background: #f5f5f5;
+  padding: 5px 15px;
+  width: 150px;
+  outline: none;
+}
+
+#search-suggestions {
+  width: 300px;         /* or 350px, or any px value you like */
+  max-width: 100%;
+  top: 110%;                 /* sits just below the input */
+  left: 0;
+  z-index: 2000;
+  max-height: 260px;         /* scrolls if > 5 items       */
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px 8px 8px 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.05);
+}
+#search-suggestions li {
+  cursor: pointer;
+}
+#search-suggestions li:hover,
+#search-suggestions li.active {
+  background:#f2f2f2;
+}
+
+
+/* Icon buttons */
+.icon-btn {
+  background: none;
+  border: none;
+  margin-left: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #000;
+}
+
+/* Promo banner */
+.promo-banner {
+  background-color: #f5f5f5;
+  padding-top:80px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  
+}
+
+.promo-banner a {
+  color: #000;
+}
+
+/* Hero image section */
+.hero-section {
+  position: relative;
+  margin: 0 70px;
+}
+
+/* Collection info section */
+.collection-info h2 {
+  line-height: 1.2;
+}
+
+.collection-info p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 16px;
+  color: #333;
+}
+
+.featured-section h3 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.featured-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border-radius: 6px;
+}
+
+.featured-card img:hover {
+  transform: scale(1.03);
+}
+
+.featured-card p{
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+/* shop by icons */
+
+.shop-icons-section .scroll-btn {
+  width: 40px;
+  height: 40px;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.shop-icons-section .scroll-btn:hover {
+  background-color: #e6e6e6;
+}
+
+#icon-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 1rem;
+  padding-bottom: 10px;
+  scrollbar-width: none;
+}
+
+#icon-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+
+.icon-card {
+  width: 420px;
+  flex-shrink: 0;
+  background: #f6f6f6;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+/* Footer */
+
+.site-footer {
+  background-color: #f0ecec;
+  color: #000000;
+  font-size: 14px;
+  border: rgb(0, 0, 0);
+}
+
+.site-footer h5,
+.site-footer p,
+.site-footer h6 {
+  color: #000000;
+}
+
+.footer-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.footer-icon {
+  color: #000000;
+  font-size: 1.2rem;
+}
+
+.footer-icon:hover {
+  color: #000000;
+}
+
+/* mens page */
+
+.container1 h4{
+  margin-top: 70px;
+  margin-left: 40px;
+}
+
+.container1 button {
+  margin-top: 70px;
+  margin-right: 20px;
+}
+
+.dropdown-menu {
+  min-width: 180px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.sort-option.active {
+  font-weight: 600;
+  background-color: #f8f9fa;
+}
+
+
+.card-img-top {
+  object-fit: cover;
+  height: 250px;
+}
+
+.card-body {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.card h6 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.card p {
+  font-size: 0.875rem;
+}
+
+
+/* === PRODUCT PAGE STYLES === */
+
+.container3{
+  padding: 80px 50px;
+}
+
+#thumbnail-list img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border 0.3s ease;
+}
+
+#thumbnail-list img:hover {
+  border: 2px solid black;
+}
+
+#main-image {
+  width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+  background: #f5f5f5;
+  padding: 10px;
+}
+
+#size-options button {
+  min-width: 80px;
+  padding: 8px 12px;
+  font-weight: 500;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+#size-options button:hover {
+  border-color: black;
+}
+
+#size-options button.selected {
+  background: black;
+  color: white;
+  border-color: black;
+}
+
+/* Add-to-bag + Favourite buttons */
+button.btn-dark {
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 25px;
+}
+
+button.btn-outline-dark {
+  border-radius: 25px;
+}
+
+/* favourite page */
+#favourites-list {
+  padding-top: 80px; /* adjust as needed based on header height */
+}
+
+/* --- favourites page heart-icon --- */
+.fav-card            { position: relative; }      /* let us absolutely-position the icon   */
+.remove-fav-btn      {                             /* the heart button itself               */
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: background .25s, color .25s;
+}
+.remove-fav-btn:hover {
+  background: #111;
+  color: #fff;
+}
+
+
+.order-success {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border: 2px solid #28a745;
+  padding: 30px 50px;
+  text-align: center;
+  z-index: 2000;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 12px;
+  font-family: sans-serif;
+}
+.order-success .icon {
+  font-size: 50px;
+  color: #28a745;
+  margin-bottom: 10px;
+}
+.order-success .text {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+.d-none {
+  display: none;
+}
+
